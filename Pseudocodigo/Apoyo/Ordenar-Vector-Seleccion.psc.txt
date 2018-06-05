@@ -1,0 +1,36 @@
+Algoritmo ordenarVectores
+	//Algoritmo Selección
+		Definir arreglo, i, NumIn, minimo, aux como entero;
+		
+		Escribir "Ingrese la cantidad de datos que va a igresar";
+		Leer NumIn;
+		dimension arreglo[NumIn]
+		
+		Escribir "Este es el vector original:";
+		Escribir "";
+		//Carga del vector automática con la función azar
+		para i <- 1 hasta NumIn con paso 1 Hacer       
+			arreglo[i] <- azar(1000);
+			Escribir arreglo[i];       
+		FinPara
+		
+		para i <- 1 hasta NumIn con paso 1 Hacer       
+			minimo <- i;       
+			Para j<-i+1 Hasta NumIn Con Paso 1 Hacer           
+				Si arreglo[j] < arreglo[minimo] Entonces    //con < ordena ascendente, con > ordena descendente
+					minimo <- j;
+				Fin Si           
+			Fin Para       
+			aux <- arreglo[i];
+			arreglo[i] <- arreglo[minimo];
+			arreglo[minimo] <- aux;       
+		FinPara
+		
+		Escribir "Este es el vector ordenado:";
+		Escribir "";
+		
+		para i <- 1 hasta NumIn con paso 1 Hacer       
+			Escribir arreglo[i];       
+		FinPara
+		
+FinAlgoritmo
