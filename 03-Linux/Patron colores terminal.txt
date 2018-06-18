@@ -28,7 +28,7 @@
 *.color13:      #d7a0a2
 
 ! cyan
-*.color6:       #adb4b4
+*.color6:       #76aec9
 *.color14:      #dfb8dc
 
 ! white
